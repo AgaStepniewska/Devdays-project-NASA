@@ -1,0 +1,533 @@
+/*! HTML5 Boilerplate v5.0 | MIT License | http://h5bp.com/ */
+
+html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+
+/* ===== Initializr Styles ==================================================
+   Author: Jonathan Verrecchia - verekia.com/initializr/responsive-template
+   ========================================================================== */
+
+body {
+    font: 16px/26px 'Helvetica LT W01 Light', Helvetica, Helvetica Neue, Arial;
+    margin: 0 auto;
+    background-color: #B3B3B5;
+    }
+
+
+.light { font-family:'Helvetica LT W01 Light'; }
+.roman { font-family:'Helvetica LT W01 Roman'; }
+.bold { font-family:'Helvetica LT W01 Bold'; }
+
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+[class*="col-"] {
+    float: left;
+    min-height: 1px;
+    text-align: center;
+    margin: 0;
+    position: relative;
+}
+.row:before,
+.row:after {
+    content: " ";
+    display: table;
+    clear: both;
+}
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+#hero {
+    background: linear-gradient(rgba(0,0,0, 0.3), rgba(0,0,0, 0.3)), url(https://images.pexels.com/photos/2154/sky-lights-space-dark.jpg?w=940&h=650&auto=compress&cs=tinysrgb);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    max-width: 100%;
+    margin-bottom: 5%;
+    height: 100vh; 
+
+}
+#hero nav input[type="checkbox"] + label {
+    font-size: 45px;
+
+    cursor: pointer;
+    color: #fff; }
+input, label {
+    display: none; 
+    position: absolute;
+    top: 5px;
+    right: 20px;
+}
+   
+a, h1, h2 {
+    color: #fff;
+    text-decoration: none;
+}
+nav {
+    margin-top: 0;
+
+}
+nav ul {
+    max-width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+}
+nav ul li {
+    padding-right: 40px;
+    padding-top: 30px;
+}
+nav ul li a {
+    font-size: 25px;
+}
+
+
+nav ul li a:hover,
+footer p a:hover {
+    color: #FC3D21;
+    text-decoration: underline;
+}
+.logo {
+    width: 130px;
+    height: auto;
+    float: left;
+    margin: 10px;
+    margin-left: 20px;
+}
+
+#hero .slogan {
+    max-width: 90%;
+    min-height: 25vh;
+    margin: 10% auto;
+    background-color: rgba(0,0,0, 0.6);
+    color: #fff;
+    font-size: 30px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+#hero .slogan h1, h2 {
+    text-align: center;
+}
+#hero .slogan h1 {
+    padding-top: 20px;
+    font-size: 60px;
+}
+.btn {
+    width: 150px;
+    height: 40px;
+    background-color: #0B3D91;
+    border: 1px solid #FC3D21;
+    border-radius: 2px;
+    padding: 5px;
+    font-size: 16px;
+    box-shadow: 2px 3px 6px 0 rgba(252,61,33, 0.5); 
+}
+.btn:hover {
+    background-color: #FC3D21;
+    border: 1px solid #0B3D91;
+    box-shadow: 2px 3px 6px 0 rgba(11,61,145, 0.5);
+}
+    
+/* search.html css file */
+
+#searchJob, #howToApply{
+    max-width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+#searchJob {
+    background-image: url(../images/1.jpg);
+    min-height: 100vh;
+}
+.title {
+    max-width: 100%;
+    min-height: 20vh;
+    background-color: rgba(11, 61, 145, 0.6);
+    box-shadow: 3px 5px 7px 0 rgba(255, 255, 255, 0.3);
+}
+.title .logo {
+    width: 100px;
+    height: auto;
+    position: fixed;
+    top: 10px;
+    left: 20px;
+    z-index: 1;
+}
+.title h1,
+.title2 h1 {
+    text-align: center;
+    margin: 5% auto;
+    font-size: 40px;
+    color: #fff;  
+    text-transform: uppercase;
+}
+
+.locationselect, .seriesselect, .scheduleselect {
+    width: 200px;
+    height: 40px;
+    margin: 5% auto;
+    box-shadow: 3px 5px 7px 0 rgba(11, 61, 145, 0.8);
+    border-radius: 3px;
+    cursor: pointer;
+
+}
+#searchJob .job_list h1 {
+    color: #fc3d21;
+    font-size: 30px;
+    text-transform: uppercase;
+    max-width: 80%;
+    background-color: rgba(0, 0, 0, 0.5);
+    margin: auto;
+    line-height: 50px;
+    border: 1px solid #0b3d91;
+    box-shadow: 3px 5px 7px 0 rgba(11, 61, 145, 0.8);
+}
+#joblist .my-new-list {
+    max-width: 80%;
+    margin: 3% auto;
+    background-color: rgba(0, 0, 0, 0.6);
+    border: 1px solid #0b3d91;
+    box-shadow: 3px 5px 7px 0 rgba(11, 61, 145, 0.8);
+    padding-top: 30px;
+    padding-bottom: 30px;
+    font-size: 20px;
+}
+#joblist .my-new-list li {
+    padding: 20px;
+    border: 1px solid #0b3d91;
+    box-shadow: 3px 5px 7px 0 rgba(11, 61, 145, 0.8);
+    max-width: 60%;
+    margin: 3% auto;
+}
+#joblist .my-new-list li:hover {
+    background-color: #0b3d91;
+    transform: scale(1.1);
+}
+.map {
+    max-width: 80%;
+    margin: auto;
+}
+    
+iframe {
+    box-shadow: 2px 3px 6px 0 rgba(11,61,145, 0.5);
+    margin: 10% auto;
+   
+}
+/* how to apply.html file */
+#howToApply {
+    background-image: url(../images/3.jpg);
+    max-width: 90%
+    height: 60vh;
+    padding-bottom: 5%;
+    margin: 5% auto;
+}
+
+#howToApply .title2 h1{
+    color: #FC3D21;
+    padding-top: 2%;
+    max-width: 80%;
+    background-color: rgba(121, 121, 124, 0.5);
+    box-shadow: 3px 5px 7px 0 rgba(252, 61, 33, 0.8);
+    border-top: 1px solid #FC3D21;
+    border-left: 1px solid #FC3D21;
+    border-right: 1px solid #FC3D21;
+    margin: auto;
+    padding-bottom: 3%;
+
+}
+.title2 {
+    margin-top: 0;
+    padding-top: 5%;
+    margin-bottom: 3%;
+}
+article .container {
+    max-width: 80%;
+    min-height: 100vh;
+    margin: auto;
+    background-color: rgba(121, 121, 124, 0.9);
+    box-shadow: 3px 5px 7px 0 rgba(252, 61, 33, 0.8);
+    border: 1px solid #FC3D21;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+article .container p {
+    width: 90%;
+    font-size: 20px;
+    text-align: justify;
+    margin: auto;
+    color: black;
+    font-weight: 400;
+   
+}
+article .container h2 {
+    font-size: 30px;
+    line-height: 40px;
+    color: #FC3D21;
+    font-weight: 400;
+   
+}
+article .container .jobLink {
+    max-width: 200px;
+    line-height: 50px;
+    margin: auto;
+    text-align: center;
+    padding-top: 15px;
+
+}
+article .container .jobLink a {
+    font-size: 20px;
+    color: #FC3D21;
+    text-align: center;
+    text-transform: uppercase;
+}
+article .container .jobLink a:hover {
+    text-decoration: underline;
+}
+/* socialMedia */
+#socialMedia {
+    max-width: 80%;
+    background-color: rgba(121,121,124, 0.2);
+    box-shadow: 3px 5px 7px 0 rgba(252, 61, 33, 0.8);
+    border-bottom: 1px solid #FC3D21;
+    border-left: 1px solid #FC3D21;
+    border-right: 1px solid #FC3D21;
+    height: 20vh;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    word-spacing: 20px;
+}
+#socialMedia .fa {
+    font-size: 50px;
+}
+#socialMedia .fa:hover {
+    transform: scale(1.2);
+}
+.fa-twitter-square {
+    color: #1dcaff;
+}
+.fa-facebook-official {
+    color: #3b5998;
+}
+.fa-linkedin-square {
+    color: #0077B5;
+}
+.fa-youtube-play {
+    color: #ff0000;
+}
+.fa-instagram {
+    color: #fb3958;
+}
+/*footer */
+#contact {
+    max-width: 100%;
+    min-height: 20vh;
+    background-color: rgba(11, 61, 145, 0.9);
+    color: #fff;
+    text-align: center;
+    margin: 0;
+}
+#contact h1 {
+    color: #FC3D21;
+    font-weight: 400;
+    padding-top: 10px;
+}
+#contact p {
+    font-size: 16px;
+    font-weight: 300;
+}
+#contact .fa {
+    font-size: 20px;
+    color: #FC3D21;
+    padding-right: 5px;
+} 
+
+@media(min-width: 768px) and (max-width: 1199px), (max-width: 768px) {
+
+    #hero nav label {
+        display: block;
+        position: absolute;
+        top: 3%;
+        right: 3%;
+        text-align: right; 
+    }
+    #hero .slogan {
+        
+        position: absolute;
+        bottom: 4%;
+        left: 1%;
+        right: 1%;
+        width: 100%;
+        background: transparent;
+    } 
+    #hero .slogan h1 {
+        padding-top: 0;
+    }
+    #menu-button:not(:checked) ~ ul {
+        display: none; 
+    }
+
+    #menu-button:checked ~ ul {
+        display: flex; 
+        flex-direction: column;
+        align-items: flex-end;
+        padding-right: 5px;
+        margin-top: 0;
+    }
+    nav ul {
+        padding-top: 10%; 
+    }
+    nav ul li {
+        padding-right: 1px;
+    }
+    .locationselect, .seriesselect, .scheduleselect {
+        margin: 1% auto
+    } 
+    #searchJob .title {
+        margin-bottom: 10%;
+    }
+    #searchJob .job_list h1 {
+        font-size: 25px;
+        text-align: center;
+    }
+    #howToApply h1 {
+        font-size: 30px;
+        line-height: 30px;
+    }
+}
+@media(min-width: 768px) and (max-width: 1199px) {
+    .col-m-1 {width: 8.33%;}
+    .col-m-2 {width: 16.66%;}
+    .col-m-3 {width: 25%;}
+    .col-m-4 {width: 33.33%;}
+    .col-m-5 {width: 41.66%;}
+    .col-m-6 {width: 50%;}
+    .col-m-7 {width: 58.33%;}
+    .col-m-8 {width: 66.66%;}
+    .col-m-9 {width: 75%;}
+    .col-m-10 {width: 83.33%;}
+    .col-m-11 {width: 91.66%;}
+    .col-m-12 {width: 100%;}
+    #hero .slogan {
+        padding-top: 5%;
+    } 
+    .slogan h2{
+        font-size: 30px;
+    } 
+    #hero nav ul li a {
+        font-size: 24px;
+    } 
+
+}
+
+@media(max-width: 768px) {
+    .col-s-1 {width: 8.33%;}
+    .col-s-2 {width: 16.66%;}
+    .col-s-3 {width: 25%;}
+    .col-s-4 {width: 33.33%;}
+    .col-s-5 {width: 41.66%;}
+    .col-s-6 {width: 50%;}
+    .col-s-7 {width: 58.33%;}
+    .col-s-8 {width: 66.66%;}
+    .col-s-9 {width: 75%;}
+    .col-s-10 {width: 83.33%;}
+    .col-s-11 {width: 91.66%;}
+    .col-s-12 {width: 100%;}
+    #hero {
+        background: linear-gradient(rgba(0,0,0, 0.3), rgba(0,0,0, 0.3)), url(https://images.pexels.com/photos/2154/sky-lights-space-dark.jpg?w=940&h=650&auto=compress&cs=tinysrgb); 
+    }  
+    #hero .slogan {
+        padding-top: 20%;
+    } 
+    .slogan h1 {
+        font-size: 30px;
+    }
+    .slogan h2 {
+        font-size: 20px;
+    }
+    #searchJob .title h1 {
+        line-height: 40px;
+    }
+    #searchJob .title .logo,
+    #howToApply .title .logo {
+        width: 60px;
+        height: auto;
+        top: 50px;
+        left: -20px;
+
+    }
+    #hero nav ul li a {
+        font-size: 20px;
+            }
+    #socialMedia {
+        word-spacing: 5px;
+    }
+}
